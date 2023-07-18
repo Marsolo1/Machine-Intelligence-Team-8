@@ -1,6 +1,3 @@
-### create a window using tkinter, that can take as input a picture from the computer and display it on the screen
-### the picture is resized to fit the window
-
 from tkinter import *
 from PIL import ImageTk, Image
 from tkinter import filedialog
@@ -36,6 +33,8 @@ my_btn = Button(root, text="Open Image", command=open_img).pack(anchor=CENTER)
 
 # create a predict button
 predict_btn = Button(root, text="Predict", command=display_result).pack(anchor=CENTER)
+
+#TODO: display a map with the predicted result
 
 if __name__ == '__main__':
 	root.mainloop()
